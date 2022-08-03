@@ -1,0 +1,121 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia-h2 {
+  font-size: 8rem;
+  line-height: 1;
+  color: #DDDDDD;
+  word-break: break-all;
+  max-width: 5ch;
+  margin-top: 120px;
+}
+
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  color: #2C2C2C;
+  max-width: 45ch;
+  margin-top: 130px;
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.empresa::before {
+  content: '2022';
+  position: absolute;
+  left: -80px;
+  top: 20px;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.empresa-titulo {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  position: relative;
+}
+
+.empresa-texto::before {
+  content: '';
+  position: absolute;
+  background: url('../img/detalhe2.svg') no-repeat;
+  width: 100%;
+  height: 100%;
+  left: -20px;
+  top: -50px;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #535353;
+  position: relative;
+  max-width: 40ch;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia-h2 {
+    color: #141414;
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+    margin-bottom: -120px;
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+  .empresa-texto::before {
+    top: -80px;
+  }
+}
